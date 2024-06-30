@@ -1,0 +1,3 @@
+THIS PROJECT IS FOR LEARNING PURPOSES ONLY!
+
+I am using this to learn HTML & CSS. 
