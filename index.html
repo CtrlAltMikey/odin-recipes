@@ -3,20 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Recipes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Chef Mikey's Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .recipe-box {
+            background-color: #fff;
+            border: 2px solid #333;
+            border-top-width: 6px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            width: calc(33.33% - 20px);
+            max-width: 300px;
+        }
+        .recipe-box:hover {
+            transform: translateY(-5px);
+        }
+        .recipe-box img {
+            width: 100%;
+            height: auto;
+        }
+        .recipe-title {
+            background-color: #333;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 10px;
+            text-align: center;
+        }
+        .gray-box {
+            background-color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-    <h3 style="font-size: 4.5rem">
-         Mikey's Kitchen
-    </h1>
 
-    <ul>
-    <li><h1> <a href="recipes/lasagna.html">Lasagna</a></h1></li>
-    <li><h1> <a href="recipes/Cereal.html">Cereal</a></h1></li>
-    <li><h1> <a href="recipes/Eggs.html">Eggs</a></h1></li>
-</ul></nav>
-<h2> Thank you so much for cooking with Mikey!</h2>
+    <!-- Header section with logo -->
+    <header>
+        <img src="./recipes/images/CMikey.png" alt="Chef Mikey Logo">
+        <h1>Chef Mikey's Recipes</h1>
+    </header>
+
+    <!-- Main content container -->
+    <div class="container">
+        <div class="recipe-box">
+            <a href="./blueberry_pancakes.html">
+                <img src="./recipes/images/Pancakes.jpg" alt="Blueberry Pancakes">
+                <div class="recipe-title">Blueberry Pancakes</div>
+            </a>
+        </div>
+
+        <div class="recipe-box">
+            <a href="/recipes/images/">
+                <img src="/recipes/images/ShepardsPie.jpg" alt="Shepard's Pie">
+                <div class="recipe-title">Shepard's Pie</div>
+            </a>
+        </div>
+
+        <div class="recipe-box">
+            <a href="./lasagna.html">
+                <img src="./images/Lasagna.jpg" alt="Lasagna">
+                <div class="recipe-title">Lasagna</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="gray-box">
+            <img src="./recipes/images/CMikey.png" alt="Chef Mikey Logo">
+            <p>&copy; 2024 Chef Mikey. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

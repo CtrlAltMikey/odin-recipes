@@ -1,0 +1,137 @@
+/* Reset styles and basic setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center align all text */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+
+header img {
+  max-width: 150px; /* Adjust the size of the logo as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+header h1 {
+  font-size: 5rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left; /* Reset text alignment for content */
+}
+
+.recipe-section {
+  margin-bottom: 20px;
+  padding: 20px; /* Add padding to separate content from borders */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top-width: 5px;
+  text-align: left; /* Reset text alignment for section content */
+  position: relative; /* Ensure relative positioning for stacking */
+}
+
+.recipe-section .section-header {
+  background-color: #333; /* Background color for section headers */
+  color: #fff; /* Text color for section headers */
+  border-top-left-radius: 8px; /* Rounded corners */
+  border-top-right-radius: 8px;
+  padding: 15px 20px; /* Padding inside the section headers */
+  margin-bottom: -1px; /* Compensate for the top border of .recipe-section */
+  text-align: center; /* Center align section header text */
+}
+
+.recipe-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 0; /* Remove default margin on top of h2 */
+}
+
+.recipe-section p,
+.recipe-section ul,
+.recipe-section ol {
+  text-align: center; /* Center align text within .recipe-section */
+}
+
+.recipe-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.recipe-info ul li {
+  margin-bottom: 5px;
+}
+
+.recipe-section ol {
+  list-style-type: decimal;
+  list-style-position: inside; /* Place numbers inside the list item */
+  padding-left: 0; /* Reset padding for consistent spacing */
+}
+
+.recipe-section ol li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: relative; /* Ensure relative positioning for stacking */
+  clear: both; /* Clear any floats */
+}
+
+.gray-box {
+  background-color: #ccc; /* Gray background color */
+  padding: 20px; /* Padding inside the gray box */
+  text-align: center; /* Center align content */
+  z-index: 0; /* Ensure gray-box stays below other content */
+  position: relative; /* Ensure relative positioning for stacking */
+}
+
+.gray-box img {
+  max-width: 80px; /* Adjust the size of the logo inside the gray box */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure image behaves as a block element */
+  margin: 0 auto 10px; /* Center image horizontally and add some bottom margin */
+}
+
+.image-box {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.food {
+  border-radius: 10px; /* Adjust border radius */
+  display: block; /* Ensure image behaves as a block element */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center image horizontally */
+
+}
